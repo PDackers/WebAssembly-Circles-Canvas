@@ -1,0 +1,14 @@
+{
+  "name": "getting-started-with-wa",
+  "version": "1.0.0",
+  "description": "getting-started",
+  "main": "server.js",
+  "author": "PD <notneededfornow@emailprovider.com>",
+  "license": "MIT",
+  "script": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

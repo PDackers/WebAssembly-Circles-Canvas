@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAssembly Demo</title>
+</head>
+<body>
+    <h1>WebAssembly Demo</h1>
+    <!--
+    <script src="demo.js"></script>
+    <script>
+        // Wrap C _greet as a JS function.
+        const greet = cwrap("greet", "string", ["string"]);
+    </script>
+    -->
+    <script src="imports.js"></script>
+    <script>
+        // Return a usable value to C.
+        function getNum() {
+            return 22;
+        }
+        // Return a usable string to C.
+        function getStr() {
+            return "Hello from JS.";
+        }
+    </script>
+</body>
+</html>
